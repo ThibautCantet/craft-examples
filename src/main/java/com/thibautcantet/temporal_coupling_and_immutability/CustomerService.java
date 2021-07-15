@@ -8,8 +8,8 @@ public class CustomerService {
 
     public void process(String customerName, String addressString, Repository repository) {
         this.repository = repository;
-        createAddress(addressString);
-        createCustomer(customerName, address);
+        this.createAddress(addressString);
+        this.createCustomer(customerName, address);
         this.saveCustomer(customer);
     }
 
